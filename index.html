@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Documentation utilisateur officielle de PowerLibrary, gestionnaire local de photos pour Windows.">
+<title>PowerLibrary — Documentation</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="menuBtn" class="menu-btn" aria-label="Ouvrir le menu">☰</button>
+  <a class="brand" href="#bienvenue"><span class="brand-mark">▧</span><span>PowerLibrary <b>Documentation</b></span></a>
+  <span class="version">Documentation 1.0.6</span>
+</header>
+
+<div class="layout">
+<aside id="sidebar" class="sidebar">
+  <div class="search"><input id="search" type="search" placeholder="Rechercher dans l'aide…" aria-label="Rechercher dans la documentation"></div>
+  <nav id="nav">
+    <a href="#bienvenue">Bienvenue</a>
+    <a href="#demarrage">Démarrage rapide</a>
+    <a href="#bibliotheque">Bibliothèque et dossiers</a>
+    <a href="#navigation">Navigation et galerie</a>
+    <a href="#organiser">Organiser les photos</a>
+    <a href="#dragdrop">Glisser-déposer <span class="new">1.0.6</span></a>
+    <a href="#filtres">Filtres et recherche</a>
+    <a href="#visionneuse">Visionneuse</a>
+    <a href="#comparaison">Comparer des photos</a>
+    <a href="#doublons">Doublons et photos similaires</a>
+    <a href="#sauvegarde">Sauvegarde et restauration</a>
+    <a href="#apparence">Apparence et maintenance</a>
+    <a href="#raccourcis">Raccourcis et astuces</a>
+    <a href="#faq">FAQ / dépannage</a>
+  </nav>
+</aside>
+
+<main id="content">
+<section id="bienvenue">
+  <p class="eyebrow">GUIDE UTILISATEUR</p>
+  <h1>Bienvenue dans PowerLibrary</h1>
+  <p class="lead">PowerLibrary est un gestionnaire de photos local pour Windows conçu pour parcourir, classer, retrouver et comparer rapidement vos images sans déplacer vos originaux dans une base de données propriétaire.</p>
+  <div class="callout"><b>Principe important</b><br>Vos photos restent dans leurs dossiers d'origine sur vos disques. PowerLibrary conserve un catalogue local contenant les informations nécessaires à leur organisation.</div>
+  <div class="cards">
+    <a href="#demarrage"><b>Commencer</b><span>Créer sa bibliothèque et afficher ses premières photos.</span></a>
+    <a href="#organiser"><b>Classer</b><span>Tags, albums, favoris, étoiles et albums intelligents.</span></a>
+    <a href="#dragdrop"><b>Aller plus vite</b><span>Classer par glisser-déposer.</span></a>
+  </div>
+</section>
+
+<section id="demarrage">
+<h2>Démarrage rapide</h2>
+<ol>
+<li><b>Ajoutez un dossier de photos.</b> Choisissez un dossier racine à indexer. Les sous-dossiers sont parcourus récursivement.</li>
+<li><b>Laissez PowerLibrary construire le catalogue.</b> Les miniatures et métadonnées utiles sont mises en cache pour accélérer les consultations suivantes.</li>
+<li><b>Parcourez la galerie.</b> Utilisez l'arborescence de dossiers, la chronologie, la recherche ou les filtres.</li>
+<li><b>Classez vos images.</b> Ajoutez des tags, des étoiles, des favoris ou placez les photos dans des albums.</li>
+</ol>
+<div class="tip"><b>Astuce :</b> les photos ne sont pas copiées dans PowerLibrary. Le catalogue référence les fichiers présents sur vos disques.</div>
+</section>
+
+<section id="bibliotheque">
+<h2>Bibliothèque et dossiers</h2>
+<h3>Ajouter un dossier</h3>
+<p>Ajoutez les dossiers racines qui contiennent vos photos. PowerLibrary analyse leurs sous-dossiers et les présente dans une arborescence semblable à l'Explorateur Windows.</p>
+<h3>Actualiser la bibliothèque</h3>
+<p>L'actualisation recherche les changements sur disque. Les métadonnées déjà indexées peuvent être réutilisées lorsqu'un fichier n'a pas changé, ce qui accélère les analyses suivantes.</p>
+<h3>Disques externes indisponibles</h3>
+<p>Si un dossier catalogué se trouve temporairement sur un disque externe déconnecté, PowerLibrary conserve son catalogue plutôt que de considérer immédiatement les photos comme supprimées. Reconnectez le disque avant d'actualiser si vous souhaitez travailler avec ces fichiers.</p>
+<h3>Retirer une photo de la bibliothèque</h3>
+<p>Le menu contextuel d'une photo permet de la retirer du catalogue sans supprimer le fichier original.</p>
+</section>
+
+<section id="navigation">
+<h2>Navigation et galerie</h2>
+<p>La barre latérale permet de parcourir les dossiers réels selon leur hiérarchie. Cliquer sur un dossier affiche les photos de cette branche.</p>
+<h3>Chargement progressif</h3>
+<p>Pour préserver les performances des grandes bibliothèques, la galerie charge les photos par lots. Continuez à faire défiler la galerie — ou utilisez l'indication de chargement lorsqu'elle est proposée — pour afficher la suite.</p>
+<h3>Chronologie</h3>
+<p>Le mode chronologique regroupe les photos par date et offre une navigation Année → Mois lorsque les dates de prise de vue sont disponibles.</p>
+<h3>Tri</h3>
+<p>Les photos peuvent notamment être triées par nom, date de prise de vue, date de modification, note ou taille, avec ordre croissant ou décroissant.</p>
+</section>
+
+<section id="organiser">
+<h2>Organiser les photos</h2>
+<h3>Favoris et étoiles</h3>
+<p>Marquez vos images favorites et attribuez une note de 1 à 5 étoiles. Une photo sans note est considérée comme « Sans étoile ».</p>
+<h3>Tags</h3>
+<p>Les tags servent à décrire librement une photo : personnes, lieux, événements, thèmes ou toute autre catégorie utile. Une photo peut posséder plusieurs tags.</p>
+<h3>Albums manuels</h3>
+<p>Un album regroupe des photos sans déplacer leurs fichiers. Une même photo peut appartenir à plusieurs albums.</p>
+<h3>Albums intelligents</h3>
+<p>Les albums intelligents se remplissent automatiquement selon leurs critères. Ils peuvent combiner plusieurs règles, par exemple favoris, note minimale, année, appareil, extension, tag, absence de tag, absence d'album manuel ou photos récentes.</p>
+<div class="callout"><b>Album manuel ou intelligent ?</b><br>Utilisez un album manuel lorsque vous choisissez explicitement son contenu. Utilisez un album intelligent lorsque vous voulez une vue qui se met à jour automatiquement selon des règles.</div>
+</section>
+
+<section id="dragdrop">
+<p class="eyebrow">NOUVEAUTÉ 1.0.6</p>
+<h2>Classer par glisser-déposer</h2>
+<p>Le glisser-déposer accélère le classement, particulièrement pour une seule photo. La barre d'actions reste disponible pour les opérations sur plusieurs images.</p>
+<div class="drag-grid">
+<div><span class="drag-icon">🏷️ → 🖼️</span><b>Tag vers photo</b><p>Glissez un tag de la barre latérale sur une vignette pour l'appliquer.</p></div>
+<div><span class="drag-icon">🖼️ → 🏷️</span><b>Photo vers tag</b><p>Glissez une photo sur un tag pour lui appliquer ce tag.</p></div>
+<div><span class="drag-icon">🖼️ → 📁</span><b>Photo vers album</b><p>Glissez une photo sur un album manuel pour l'y ajouter.</p></div>
+<div><span class="drag-icon">🖼️🖼️ → 📁</span><b>Sélection multiple</b><p>Si la photo glissée fait partie d'une sélection, l'action s'applique à toute la sélection.</p></div>
+</div>
+<div class="tip"><b>À savoir :</b> le glisser-déposer vers un album ou un tag ne déplace jamais les fichiers sur le disque. Les albums intelligents ne sont pas des cibles de dépôt puisqu'ils sont calculés automatiquement.</div>
+</section>
+
+<section id="filtres">
+<h2>Filtres et recherche</h2>
+<p>Les filtres peuvent être combinés pour réduire rapidement la galerie. PowerLibrary propose notamment les favoris, la note minimale, l'année, l'appareil et le type de fichier.</p>
+<h3>Photos à classer</h3>
+<ul>
+<li><b>Sans album</b> : aucune appartenance à un album manuel.</li>
+<li><b>Sans étoile</b> : aucune note attribuée.</li>
+<li><b>Sans tag</b> : aucun tag associé.</li>
+</ul>
+<p>En activant les trois à la fois, vous obtenez une vue très pratique des photos qui restent à classer.</p>
+<h3>Recherche</h3>
+<p>Utilisez la recherche pour retrouver rapidement des photos à partir des informations indexées, notamment le nom, le chemin, l'extension et les tags.</p>
+</section>
+
+<section id="visionneuse">
+<h2>Visionneuse</h2>
+<p>Ouvrez une photo pour l'examiner en grand. La visionneuse utilise l'image originale et permet de naviguer dans l'ensemble correspondant aux filtres actifs.</p>
+<ul>
+<li>Zoom avant et arrière.</li>
+<li>Déplacement de l'image lorsqu'elle est agrandie.</li>
+<li>Réinitialisation du zoom.</li>
+<li>Navigation précédente / suivante.</li>
+<li>Mode plein écran.</li>
+<li>Affichage des métadonnées disponibles : dimensions, date, appareil, objectif, ISO, ouverture, exposition et focale.</li>
+</ul>
+</section>
+
+<section id="comparaison">
+<h2>Comparer deux photos</h2>
+<p>Sélectionnez exactement deux photos puis utilisez <b>Comparer</b>. Les deux originaux s'affichent côte à côte avec leurs informations.</p>
+<p>Le mode de comparaison propose un zoom et un déplacement synchronisés pour examiner exactement la même zone des deux images. Passez en mode indépendant lorsque vous souhaitez manipuler chaque photo séparément.</p>
+</section>
+
+<section id="doublons">
+<h2>Doublons et photos similaires</h2>
+<h3>Doublons exacts</h3>
+<p>La recherche de doublons exacts compare le contenu des fichiers à l'aide d'une empreinte SHA-256. Elle sert à repérer des fichiers réellement identiques.</p>
+<h3>Photos similaires</h3>
+<p>La recherche de photos similaires utilise une empreinte perceptuelle afin de repérer des images visuellement proches même si leurs fichiers ne sont pas identiques. Le seuil de similarité permet d'être plus large ou plus strict.</p>
+<div class="warning"><b>Vérifiez avant de supprimer.</b><br>Deux photos similaires ne sont pas nécessairement des doublons. Utilisez la comparaison avant de choisir les copies à retirer.</div>
+<h3>Suppression sécurisée</h3>
+<p>Lorsqu'une photo est envoyée à la Corbeille depuis ces outils, PowerLibrary demande à Windows de déplacer le fichier dans la Corbeille. L'entrée du catalogue n'est retirée qu'après réussite de l'opération.</p>
+</section>
+
+<section id="sauvegarde">
+<h2>Sauvegarde et restauration</h2>
+<p>La sauvegarde de PowerLibrary protège le <b>catalogue</b> : organisation, métadonnées indexées et données associées à la bibliothèque.</p>
+<div class="warning"><b>Important :</b> une sauvegarde de la bibliothèque ne remplace pas une sauvegarde de vos fichiers photo originaux. Conservez une sauvegarde séparée de vos photos.</div>
+<p>La restauration vérifie le fichier de sauvegarde et remplace le catalogue actif après les contrôles prévus par l'application.</p>
+</section>
+
+<section id="apparence">
+<h2>Apparence et maintenance</h2>
+<h3>Thème</h3>
+<p>PowerLibrary prend en charge les apparences claire, sombre et système, ainsi que les options d'accent disponibles dans l'application.</p>
+<h3>Cache des miniatures</h3>
+<p>Les miniatures sont conservées dans un cache local afin d'accélérer la galerie. Ce cache peut être nettoyé depuis les outils de maintenance; les miniatures seront recréées au besoin.</p>
+<h3>Version et mises à jour</h3>
+<p>La fenêtre À propos affiche la version de l'application et des statistiques de bibliothèque. PowerLibrary peut vérifier la dernière version publiée et signaler lorsqu'une mise à jour est disponible.</p>
+</section>
+
+<section id="raccourcis">
+<h2>Raccourcis et astuces</h2>
+<div class="table-wrap"><table>
+<tr><th>Action</th><th>Utilisation</th></tr>
+<tr><td>F11</td><td>Basculer le plein écran de la visionneuse.</td></tr>
+<tr><td>Molette dans la visionneuse</td><td>Zoomer ou dézoomer.</td></tr>
+<tr><td>Glisser l'image agrandie</td><td>Déplacer la zone visible.</td></tr>
+<tr><td>Double-clic en comparaison</td><td>Réinitialiser la vue de comparaison.</td></tr>
+<tr><td>Clic droit sur une photo</td><td>Ouvrir avec l'application par défaut, copier le chemin, ouvrir l'emplacement, retirer du catalogue ou envoyer à la Corbeille.</td></tr>
+<tr><td>Glisser une photo</td><td>Déposer sur un tag ou un album manuel.</td></tr>
+<tr><td>Glisser un tag</td><td>Déposer sur une photo.</td></tr>
+</table></div>
+</section>
+
+<section id="faq">
+<h2>FAQ / dépannage</h2>
+<details><summary>PowerLibrary copie-t-il mes photos dans sa base de données ?</summary><p>Non. Les fichiers originaux restent dans leurs dossiers. Le catalogue conserve les informations nécessaires à leur gestion.</p></details>
+<details><summary>Que se passe-t-il si mon disque externe est débranché ?</summary><p>Le catalogue des dossiers temporairement indisponibles est conçu pour être conservé. Reconnectez le disque pour accéder de nouveau aux originaux.</p></details>
+<details><summary>« Retirer de la bibliothèque » supprime-t-il mon fichier ?</summary><p>Non. Cette commande retire l'entrée du catalogue mais laisse le fichier sur le disque.</p></details>
+<details><summary>Quelle différence avec « Envoyer à la Corbeille » ?</summary><p>Cette commande demande à Windows de déplacer le fichier original vers la Corbeille puis retire son entrée du catalogue si l'opération réussit.</p></details>
+<details><summary>Pourquoi certaines métadonnées sont-elles absentes ?</summary><p>Elles dépendent des informations EXIF présentes dans le fichier. Toutes les images ne contiennent pas les mêmes métadonnées.</p></details>
+<details><summary>Pourquoi un album intelligent refuse-t-il le glisser-déposer ?</summary><p>Son contenu est déterminé automatiquement par ses critères. Modifiez les critères ou les propriétés de la photo plutôt que d'y ajouter manuellement une image.</p></details>
+<details><summary>La sauvegarde PowerLibrary sauvegarde-t-elle mes originaux ?</summary><p>Non. Sauvegardez vos fichiers photo séparément.</p></details>
+</section>
+
+<footer>
+  <b>PowerLibrary</b> — Documentation utilisateur<br>
+  <span>Gestion locale de photos pour Windows · Documentation mise à jour pour le développement 1.0.6.</span>
+</footer>
+</main>
+</div>
+<script src="assets/docs.js"></script>
+</body>
+</html>
