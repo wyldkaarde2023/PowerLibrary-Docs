@@ -11,7 +11,7 @@
 <header class="topbar">
   <button id="menuBtn" class="menu-btn" aria-label="Ouvrir le menu">☰</button>
   <a class="brand" href="#bienvenue"><span class="brand-mark">▧</span><span>PowerLibrary <b>Documentation</b></span></a>
-  <span class="version">Documentation 1.0.7</span>
+  <span class="version">Documentation 1.0.8</span>
 </header>
 
 <div class="layout">
@@ -21,6 +21,7 @@
     <a href="#bienvenue">Bienvenue</a>
     <a href="#demarrage">Démarrage rapide</a>
     <a href="#bibliotheque">Bibliothèque et dossiers</a>
+    <a href="#interface-108">Interface 1.0.8 <span class="new">1.0.8</span></a>
     <a href="#navigation">Navigation et galerie</a>
     <a href="#organiser">Organiser les photos</a>
     <a href="#dragdrop">Glisser-déposer</a>
@@ -35,6 +36,7 @@
     <a href="#visionneuse">Visionneuse</a>
     <a href="#comparaison">Comparer des photos</a>
     <a href="#doublons">Doublons et photos similaires</a>
+    <a href="#analyses-108">Analyses et portée <span class="new">1.0.8</span></a>
     <a href="#sauvegarde">Sauvegarde et restauration</a>
     <a href="#apparence">Apparence et maintenance</a>
     <a href="#raccourcis">Raccourcis et astuces</a>
@@ -47,7 +49,7 @@
   <p class="eyebrow">GUIDE UTILISATEUR</p>
   <h1>Bienvenue dans PowerLibrary</h1>
   <p class="lead">PowerLibrary est un gestionnaire de photos local pour Windows conçu pour parcourir, classer, retrouver et comparer rapidement vos images sans déplacer vos originaux dans une base de données propriétaire.</p>
-  <div class="callout"><b>Principe important</b><br>Vos photos restent dans leurs dossiers d'origine sur vos disques. PowerLibrary conserve un catalogue local contenant les informations nécessaires à leur organisation.</div><figure class="doc-shot"><img src="assets/images/01-vue-generale.jpg" alt="Vue générale de PowerLibrary avec la galerie, la navigation et les filtres" loading="lazy"><figcaption>Vue générale de PowerLibrary 1.0.7 : navigation, galerie, recherche, filtres et commandes principales.</figcaption></figure>
+  <div class="callout"><b>Principe important</b><br>Vos photos restent dans leurs dossiers d'origine sur vos disques. PowerLibrary conserve un catalogue local contenant les informations nécessaires à leur organisation.</div><figure class="doc-shot"><img src="assets/images/01-vue-generale.jpg" alt="Vue générale de PowerLibrary avec la galerie, la navigation et les filtres" loading="lazy"><figcaption>Vue générale de PowerLibrary 1.0.8 : navigation, galerie, recherche, filtres et commandes principales.</figcaption></figure>
   <div class="cards">
     <a href="#demarrage"><b>Commencer</b><span>Créer sa bibliothèque et afficher ses premières photos.</span></a>
     <a href="#organiser"><b>Classer</b><span>Tags, albums, favoris, étoiles et albums intelligents.</span></a>
@@ -76,6 +78,23 @@
 <p>Si un dossier catalogué se trouve temporairement sur un disque externe déconnecté, PowerLibrary conserve son catalogue plutôt que de considérer immédiatement les photos comme supprimées. Reconnectez le disque avant d'actualiser si vous souhaitez travailler avec ces fichiers.</p>
 <h3>Retirer une photo de la bibliothèque</h3>
 <p>Le menu contextuel d'une photo permet de la retirer du catalogue sans supprimer le fichier original.</p>
+<h3>Retirer un sous-dossier de PowerLibrary</h3>
+<p>Dans l’arborescence, le menu contextuel d’un sous-dossier propose <b>➖ Retirer ce sous-dossier de PowerLibrary</b>. Cette action retire du catalogue les photos de cette branche sans supprimer les fichiers sur le disque. L’exclusion est mémorisée : une actualisation ultérieure du dossier racine n’importe pas de nouveau ce sous-dossier.</p>
+<div class="tip"><b>À savoir :</b> retirer un sous-dossier du catalogue est différent d’envoyer des photos à la Corbeille. Les originaux restent intacts.</div>
+</section>
+
+<section id="interface-108">
+<p class="eyebrow">NOUVEAUTÉ 1.0.8</p>
+<h2>Interface simplifiée et actions contextuelles</h2>
+<p>PowerLibrary 1.0.8 réorganise les commandes pour laisser davantage de place aux photos. La barre latérale regroupe la navigation, les dossiers, albums, tags et filtres, tandis que les actions liées aux photos apparaissent au moment où elles sont utiles.</p>
+<h3>Barre d’actions de sélection</h3>
+<p>Lorsqu’une ou plusieurs photos sont sélectionnées, une barre d’actions contextuelle donne accès aux commandes adaptées à la sélection, notamment les favoris, la notation, la comparaison et la planche-contact.</p>
+<h3>Menus contextuels</h3>
+<p>Le clic droit reste disponible sur les photos, dossiers, albums et tags. Les menus ont été harmonisés afin de présenter les actions directement liées à l’élément visé.</p>
+<h3>Densité de l’interface</h3>
+<p>Les préférences proposent trois densités : <b>Compacte</b>, <b>Normale</b> et <b>Grande</b>. Elles ajustent la taille des éléments de navigation et des menus sans modifier le contenu de la bibliothèque.</p>
+<h3>États vides et opérations longues</h3>
+<p>Lorsqu’un filtre ne retourne aucune photo, PowerLibrary affiche un état vide explicite avec les actions utiles pour revenir à la bibliothèque. Pendant une analyse ou une opération longue, un encadré visible indique que le traitement est en cours.</p>
 </section>
 
 <section id="navigation">
@@ -159,6 +178,12 @@
 <p>Lorsqu'une photo est envoyée à la Corbeille depuis ces outils, PowerLibrary demande à Windows de déplacer le fichier dans la Corbeille. L'entrée du catalogue n'est retirée qu'après réussite de l'opération.</p>
 </section>
 
+<section id="analyses-108">
+<p class="eyebrow">NOUVEAUTÉ 1.0.8</p>
+<h2>Portée et exclusions des analyses de similarité</h2>
+<p>Les analyses de photos similaires peuvent être limitées à une portée choisie afin d’éviter de parcourir inutilement toute la photothèque. Les dossiers racines peuvent également être exclus de l’analyse de similarité puis réintégrés ultérieurement.</p>
+<div class="callout"><b>Deux exclusions différentes</b><br>L’exclusion d’un dossier des analyses de similarité n’enlève pas ses photos du catalogue. À l’inverse, <b>Retirer ce sous-dossier de PowerLibrary</b> retire cette branche du catalogue tout en conservant les fichiers sur le disque.</div>
+</section>
 
 <section id="tags-hierarchiques">
 <p class="eyebrow">NOUVEAUTÉ 1.0.7</p>
@@ -220,6 +245,8 @@
 <h2>Apparence et maintenance</h2>
 <h3>Thème</h3>
 <p>PowerLibrary prend en charge les apparences claire, sombre et système, ainsi que les options d'accent disponibles dans l'application.</p>
+<h3>Densité</h3>
+<p>Choisissez <b>Compacte</b>, <b>Normale</b> ou <b>Grande</b> selon l’espace disponible et votre préférence de lecture. Ce réglage est conservé localement.</p>
 <h3>Cache des miniatures</h3>
 <p>Les miniatures sont conservées dans un cache local afin d'accélérer la galerie. Ce cache peut être nettoyé depuis les outils de maintenance; les miniatures seront recréées au besoin.</p>
 <h3>Version et mises à jour</h3>
@@ -230,6 +257,14 @@
 <h2>Raccourcis et astuces</h2>
 <div class="table-wrap"><table>
 <tr><th>Action</th><th>Utilisation</th></tr>
+<tr><td>Ctrl+F</td><td>Ouvrir la recherche universelle.</td></tr>
+<tr><td>Ctrl+A</td><td>Sélectionner toutes les photos visibles.</td></tr>
+<tr><td>Ctrl+Maj+A</td><td>Effacer la sélection.</td></tr>
+<tr><td>Échap</td><td>Fermer la recherche ou effacer la sélection selon le contexte.</td></tr>
+<tr><td>F</td><td>Basculer le statut favori de la sélection.</td></tr>
+<tr><td>0 à 5</td><td>Attribuer une note à la sélection; 0 retire la note.</td></tr>
+<tr><td>C</td><td>Comparer lorsque exactement deux photos sont sélectionnées.</td></tr>
+<tr><td>P</td><td>Ouvrir la planche-contact pour la sélection.</td></tr>
 <tr><td>F11</td><td>Basculer le plein écran de la visionneuse.</td></tr>
 <tr><td>Molette dans la visionneuse</td><td>Zoomer ou dézoomer.</td></tr>
 <tr><td>Glisser l'image agrandie</td><td>Déplacer la zone visible.</td></tr>
@@ -253,7 +288,7 @@
 
 <footer>
   <b>PowerLibrary</b> — Documentation utilisateur<br>
-  <span>Gestion locale de photos pour Windows · Documentation mise à jour pour le version 1.0.7.</span>
+  <span>Gestion locale de photos pour Windows · Documentation mise à jour pour la version 1.0.8.</span>
 </footer>
 </main>
 </div>
