@@ -11,7 +11,7 @@
 <header class="topbar">
   <button id="menuBtn" class="menu-btn" aria-label="Ouvrir le menu">☰</button>
   <a class="brand" href="#bienvenue"><span class="brand-mark">▧</span><span>PowerLibrary <b>Documentation</b></span></a>
-  <span class="version">Documentation 1.0.6</span>
+  <span class="version">Documentation 1.0.7</span>
 </header>
 
 <div class="layout">
@@ -23,7 +23,14 @@
     <a href="#bibliotheque">Bibliothèque et dossiers</a>
     <a href="#navigation">Navigation et galerie</a>
     <a href="#organiser">Organiser les photos</a>
-    <a href="#dragdrop">Glisser-déposer <span class="new">1.0.6</span></a>
+    <a href="#dragdrop">Glisser-déposer</a>
+    <a href="#tags-hierarchiques">Tags hiérarchiques <span class="new">1.0.7</span></a>
+    <a href="#lieux">Carte / Lieux <span class="new">1.0.7</span></a>
+    <a href="#moments">Moments <span class="new">1.0.7</span></a>
+    <a href="#nettoyage">Nettoyage <span class="new">1.0.7</span></a>
+    <a href="#meilleure-photo">Meilleure photo <span class="new">1.0.7</span></a>
+    <a href="#recherche-universelle">Recherche universelle <span class="new">1.0.7</span></a>
+    <a href="#planche-contact">Planche-contact / PDF <span class="new">1.0.7</span></a>
     <a href="#filtres">Filtres et recherche</a>
     <a href="#visionneuse">Visionneuse</a>
     <a href="#comparaison">Comparer des photos</a>
@@ -40,7 +47,7 @@
   <p class="eyebrow">GUIDE UTILISATEUR</p>
   <h1>Bienvenue dans PowerLibrary</h1>
   <p class="lead">PowerLibrary est un gestionnaire de photos local pour Windows conçu pour parcourir, classer, retrouver et comparer rapidement vos images sans déplacer vos originaux dans une base de données propriétaire.</p>
-  <div class="callout"><b>Principe important</b><br>Vos photos restent dans leurs dossiers d'origine sur vos disques. PowerLibrary conserve un catalogue local contenant les informations nécessaires à leur organisation.</div><figure class="doc-shot"><img src="assets/images/01-vue-generale.jpg" alt="Vue générale de PowerLibrary avec la galerie, la navigation et les filtres" loading="lazy"><figcaption>Vue générale de PowerLibrary 1.0.6 : navigation, galerie, recherche, filtres et commandes principales.</figcaption></figure>
+  <div class="callout"><b>Principe important</b><br>Vos photos restent dans leurs dossiers d'origine sur vos disques. PowerLibrary conserve un catalogue local contenant les informations nécessaires à leur organisation.</div><figure class="doc-shot"><img src="assets/images/01-vue-generale.jpg" alt="Vue générale de PowerLibrary avec la galerie, la navigation et les filtres" loading="lazy"><figcaption>Vue générale de PowerLibrary 1.0.7 : navigation, galerie, recherche, filtres et commandes principales.</figcaption></figure>
   <div class="cards">
     <a href="#demarrage"><b>Commencer</b><span>Créer sa bibliothèque et afficher ses premières photos.</span></a>
     <a href="#organiser"><b>Classer</b><span>Tags, albums, favoris, étoiles et albums intelligents.</span></a>
@@ -96,7 +103,7 @@
 </section>
 
 <section id="dragdrop">
-<p class="eyebrow">NOUVEAUTÉ 1.0.6</p>
+<p class="eyebrow">GLISSER-DÉPOSER</p>
 <h2>Classer par glisser-déposer</h2>
 <p>Le glisser-déposer accélère le classement, particulièrement pour une seule photo. La barre d'actions reste disponible pour les opérations sur plusieurs images.</p>
 <div class="drag-grid">
@@ -152,6 +159,56 @@
 <p>Lorsqu'une photo est envoyée à la Corbeille depuis ces outils, PowerLibrary demande à Windows de déplacer le fichier dans la Corbeille. L'entrée du catalogue n'est retirée qu'après réussite de l'opération.</p>
 </section>
 
+
+<section id="tags-hierarchiques">
+<p class="eyebrow">NOUVEAUTÉ 1.0.7</p>
+<h2>Tags hiérarchiques</h2>
+<p>Les tags peuvent maintenant être organisés en arborescence, par exemple <b>Voyages → Canada → Québec</b>. Glissez un tag sur un autre pour le placer comme enfant, ou déposez-le sur <b>Racine des tags</b> pour le ramener au premier niveau.</p>
+<p>Le filtrage par un tag parent inclut également ses descendants. PowerLibrary empêche les cycles dans l'arborescence et conserve les tags enfants lorsqu'un parent est supprimé.</p>
+</section>
+
+<section id="lieux">
+<p class="eyebrow">NOUVEAUTÉ 1.0.7</p>
+<h2>Carte / Lieux</h2>
+<p>La vue <b>📍 Lieux</b> affiche sur une carte les photos qui possèdent des coordonnées GPS dans leurs métadonnées EXIF. Cliquez sur un marqueur pour accéder à la photo correspondante.</p>
+<div class="tip"><b>À savoir :</b> les coordonnées sont indexées localement dans le catalogue. Une connexion Internet est nécessaire pour charger le fond cartographique OpenStreetMap.</div>
+</section>
+
+<section id="moments">
+<p class="eyebrow">NOUVEAUTÉ 1.0.7</p>
+<h2>Moments</h2>
+<p>La vue <b>📅 Moments</b> regroupe automatiquement les photos prises à proximité dans le temps. Un changement de journée crée un nouveau moment et un intervalle important entre deux prises sépare également les séries.</p>
+<p>Les Moments sont calculés à partir du catalogue : ils ne déplacent pas les fichiers et ne créent pas d'albums supplémentaires.</p>
+</section>
+
+<section id="nettoyage">
+<p class="eyebrow">NOUVEAUTÉ 1.0.7</p>
+<h2>Centre de nettoyage</h2>
+<p>La vue <b>🧹 Nettoyage</b> aide à repérer les photos qui méritent une vérification : faible résolution, très petits fichiers, absence de date EXIF ou métadonnées manquantes. Le total compte les photos uniques même lorsqu'une image répond à plusieurs critères.</p>
+<p>Le centre donne aussi accès aux outils de doublons exacts et de photos similaires. <b>Aucune suppression n'est automatique.</b></p>
+</section>
+
+<section id="meilleure-photo">
+<p class="eyebrow">NOUVEAUTÉ 1.0.7</p>
+<h2>Meilleure photo</h2>
+<p>PowerLibrary peut analyser une série de photos visuellement similaires et suggérer celle qui présente le meilleur équilibre technique. L'analyse locale tient compte notamment de la <b>netteté</b>, de l'<b>exposition</b> et de la <b>résolution</b>.</p>
+<div class="warning"><b>Une suggestion, pas un verdict.</b><br>La meilleure photo techniquement n'est pas nécessairement votre photo préférée. Utilisez la comparaison avant de choisir ou de supprimer des images.</div>
+</section>
+
+<section id="recherche-universelle">
+<p class="eyebrow">NOUVEAUTÉ 1.0.7</p>
+<h2>Recherche universelle</h2>
+<p>La section <b>🔎 Recherche</b> permet de retrouver photos, tags, albums et dossiers depuis une seule zone. Pour les photos, la recherche peut exploiter le nom, le chemin, l'extension, les dates, l'appareil, l'objectif, les favoris et la notation.</p>
+<p>Plusieurs termes peuvent être combinés pour préciser une recherche, par exemple <b>Canon 2026</b> ou <b>favori 5 étoiles</b>.</p>
+</section>
+
+<section id="planche-contact">
+<p class="eyebrow">NOUVEAUTÉ 1.0.7</p>
+<h2>Planche-contact, impression et PDF</h2>
+<p>Sélectionnez plusieurs photos puis choisissez <b>🖨️ Planche-contact</b>. Vous pouvez choisir 2, 3 ou 4 colonnes, le format Lettre ou A4, un titre et l'affichage du nom de fichier, de la date et de la notation.</p>
+<p>La planche peut être envoyée au système d'impression Windows ou enregistrée en PDF. Les fichiers photo originaux ne sont jamais modifiés.</p>
+</section>
+
 <section id="sauvegarde">
 <h2>Sauvegarde et restauration</h2>
 <p>La sauvegarde de PowerLibrary protège le <b>catalogue</b> : organisation, métadonnées indexées et données associées à la bibliothèque.</p>
@@ -196,7 +253,7 @@
 
 <footer>
   <b>PowerLibrary</b> — Documentation utilisateur<br>
-  <span>Gestion locale de photos pour Windows · Documentation mise à jour pour le développement 1.0.6.</span>
+  <span>Gestion locale de photos pour Windows · Documentation mise à jour pour le version 1.0.7.</span>
 </footer>
 </main>
 </div>
