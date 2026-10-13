@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Documentation utilisateur officielle de PowerLibrary, gestionnaire local de photos pour Windows.">
+<meta name="description" content="Documentation utilisateur officielle de PowerLibrary, gestionnaire local de photos et vidéos pour Windows.">
 <title>PowerLibrary — Documentation</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -11,7 +11,7 @@
 <header class="topbar">
   <button id="menuBtn" class="menu-btn" aria-label="Ouvrir le menu">☰</button>
   <a class="brand" href="#bienvenue"><span class="brand-mark">▧</span><span>PowerLibrary <b>Documentation</b></span></a>
-  <span class="version">Documentation 1.0.8</span>
+  <span class="version">Documentation 1.0.9</span>
 </header>
 
 <div class="layout">
@@ -21,6 +21,7 @@
     <a href="#bienvenue">Bienvenue</a>
     <a href="#demarrage">Démarrage rapide</a>
     <a href="#bibliotheque">Bibliothèque et dossiers</a>
+    <a href="#multimedia-109">Photos et vidéos <span class="new">1.0.9</span></a>
     <a href="#interface-108">Interface 1.0.8 <span class="new">1.0.8</span></a>
     <a href="#navigation">Navigation et galerie</a>
     <a href="#organiser">Organiser les photos</a>
@@ -48,10 +49,11 @@
 <section id="bienvenue">
   <p class="eyebrow">GUIDE UTILISATEUR</p>
   <h1>Bienvenue dans PowerLibrary</h1>
-  <p class="lead">PowerLibrary est un gestionnaire de photos local pour Windows conçu pour parcourir, classer, retrouver et comparer rapidement vos images sans déplacer vos originaux dans une base de données propriétaire.</p>
-  <div class="callout"><b>Principe important</b><br>Vos photos restent dans leurs dossiers d'origine sur vos disques. PowerLibrary conserve un catalogue local contenant les informations nécessaires à leur organisation.</div><figure class="doc-shot"><img src="assets/images/01-vue-generale.jpg" alt="Vue générale de PowerLibrary avec la galerie, la navigation et les filtres" loading="lazy"><figcaption>Vue générale de PowerLibrary 1.0.8 : navigation, galerie, recherche, filtres et commandes principales.</figcaption></figure>
+  <p class="lead">PowerLibrary est un gestionnaire de photos et vidéos local pour Windows conçu pour parcourir, classer, retrouver et comparer rapidement vos images sans déplacer vos originaux dans une base de données propriétaire.</p>
+  <div class="callout"><b>Principe important</b><br>Vos photos restent dans leurs dossiers d'origine sur vos disques. PowerLibrary conserve un catalogue local contenant les informations nécessaires à leur organisation.</div><figure class="doc-shot"><img src="assets/images/01-vue-generale.jpg" alt="Vue générale de PowerLibrary avec la galerie, la navigation et les filtres" loading="lazy"><figcaption>Vue générale de l’interface PowerLibrary : navigation, galerie, recherche, filtres et commandes principales.</figcaption></figure>
   <div class="cards">
     <a href="#demarrage"><b>Commencer</b><span>Créer sa bibliothèque et afficher ses premières photos.</span></a>
+    <a href="#multimedia-109"><b>Photos et vidéos</b><span>Galerie mixte, lecture MP4/WebM et métadonnées.</span></a>
     <a href="#organiser"><b>Classer</b><span>Tags, albums, favoris, étoiles et albums intelligents.</span></a>
     <a href="#dragdrop"><b>Aller plus vite</b><span>Classer par glisser-déposer.</span></a>
   </div>
@@ -81,6 +83,23 @@
 <h3>Retirer un sous-dossier de PowerLibrary</h3>
 <p>Dans l’arborescence, le menu contextuel d’un sous-dossier propose <b>➖ Retirer ce sous-dossier de PowerLibrary</b>. Cette action retire du catalogue les photos de cette branche sans supprimer les fichiers sur le disque. L’exclusion est mémorisée : une actualisation ultérieure du dossier racine n’importe pas de nouveau ce sous-dossier.</p>
 <div class="tip"><b>À savoir :</b> retirer un sous-dossier du catalogue est différent d’envoyer des photos à la Corbeille. Les originaux restent intacts.</div>
+</section>
+
+<section id="multimedia-109">
+<p class="eyebrow">NOUVEAUTÉ 1.0.9</p>
+<h2>Photos et vidéos dans une même bibliothèque</h2>
+<p>PowerLibrary 1.0.9 prend en charge les fichiers vidéo <b>MP4</b> et <b>WebM</b> en plus des images. Les vidéos restent dans leurs dossiers d’origine : PowerLibrary les indexe dans son catalogue local sans déplacer les fichiers.</p>
+<h3>Galerie mixte et filtres</h3>
+<p>Dans la galerie, choisissez <b>Tous</b> pour voir images et vidéos ensemble, <b>Images</b> pour n’afficher que les photos ou <b>Vidéos</b> pour n’afficher que les fichiers MP4 et WebM. Vous pouvez ainsi parcourir les photos et les séquences d’un même événement dans une seule vue.</p>
+<h3>Miniatures et durée</h3>
+<p>Les vidéos apparaissent avec une miniature extraite de leur contenu, une indication de lecture et leur durée. Les miniatures sont mises en cache pour accélérer les affichages suivants.</p>
+<h3>Lecteur vidéo intégré</h3>
+<p>Double-cliquez sur une vignette vidéo pour l’ouvrir dans la visionneuse. Le lecteur propose lecture et pause, barre de progression, réglage du volume et navigation entre les médias. La lecture dépend des codecs pris en charge par la version d’Electron installée : certains MP4 ou WebM particuliers peuvent ne pas être compatibles.</p>
+<h3>Classer les vidéos</h3>
+<p>Comme les images, les vidéos peuvent être ajoutées à des <b>albums</b>, recevoir des <b>tags</b> et être évaluées avec des <b>étoiles</b>. Les filtres Tous / Images / Vidéos restent utiles pour retrouver le type de média souhaité.</p>
+<h3>Métadonnées vidéo</h3>
+<p>Le panneau de métadonnées permet de consulter le format, la durée, la résolution, le codec, la taille et le chemin d’un fichier vidéo lorsque ces informations sont disponibles.</p>
+<div class="tip"><b>Actualisation :</b> si une vidéo récemment copiée dans un dossier n’apparaît pas, utilisez l’actualisation du dossier concerné dans l’arborescence.</div>
 </section>
 
 <section id="interface-108">
